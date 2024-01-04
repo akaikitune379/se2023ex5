@@ -1,7 +1,13 @@
 #include <stdio.h>
 
 int main(void) {
-  int i = 10;
-  printf("number: %d\n", i);
+  char str[] = "hello world";
+  int counter = 0;
+
+  for (int i = 0; str[i] != '\0'; i++) {
+    counter++;
+  }
+
+  printf("text: %s length: %d\n", str, counter);
   return 0;
 }
